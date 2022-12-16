@@ -1,11 +1,11 @@
 const listEl = document.querySelectorAll(".item");
 
 console.log(listEl.length);
-console.log(listEl);
+// console.log(listEl);
 
 listEl.forEach((item, index) => {
-  const category = item.querySelector("h2");
+  const category = item.firstElementChild;
   console.log("Category: ", category.textContent);
-  const elements = item.querySelectorAll("li");
-  console.log("Elements: ", elements.length);
+  const elements = item.lastElementChild;
+  console.log("Elements: ", elements.children.length);
 });
