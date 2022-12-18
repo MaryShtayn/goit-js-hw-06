@@ -1,0 +1,12 @@
+ul{
+   list-style: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.list-image {
+    width: 300px;
+    height: 180px;
+
+}
